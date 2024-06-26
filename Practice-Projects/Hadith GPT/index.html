@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadith GPT</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #EAD8C0;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+           
+        }
+        header{
+            padding: 10px 0;
+            background-color: #A79277;
+            color: #000000;
+            font-weight: 600;
+            font-size: 1.15rem;
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            gap: 1rem;
+            flex-direction: column;
+        }
+        h2{
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        #hadithId{
+            padding: 4px 10px;
+            outline: none;
+        }
+        #gethadith{
+            background-color: #D1BB9E;
+            border: 1.75px solid black;
+            padding: 12px 18px;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        #hadith{
+            font-size: 1.7rem;
+            font-weight: 500;
+        }
+
+        p{
+            margin: 40px 0;
+            padding: 0 150px;
+            font-size: 1rem;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        #gethadith:active{
+            background-color: #f8ecdb;
+        }
+
+        #book-Name{
+            padding: 4px 6px ;
+            width: 150px;
+            height: 1.6rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hadith GPT</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Enter hadith number:</h2>
+            <input type="text" id="hadithId">
+            <button id="gethadith">Search Hadith</button>
+            <h2 id="hadith">Hadith</h2>
+            <p id="hadithText">Your Hadith</p>
+            
+            <label for="book-Name">Book Name</label>
+            <input type="text" readonly id="book-Name">
+        </div>
+    </main>
+    <script src="gpt.js"></script>
+</body>
+</html>

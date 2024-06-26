@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Picker</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 50px;
+        background-color: rgb(175, 232, 250);
+        height: 100vh
+      }
+      .btns {
+        margin: 50px; 
+        gap: 1.25rem;
+      }
+      button {
+        width: 80px;
+        height: 80px;
+        border: 1.5px solid black;
+        box-shadow: 1 1 5 black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="color-picker">
+      <h1>Pick Your Color</h1>
+      <div class="btns">
+        <button id="btn1 btn"></button>
+        <button id="btn2 btn"></button>
+        <button id="btn3 btn"></button>
+        <button id="btn4 btn"></button>
+      </div>
+    </div>
+    <script src="color.js"></script>
+  </body>
+</html>
